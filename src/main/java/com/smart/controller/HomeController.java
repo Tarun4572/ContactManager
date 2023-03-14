@@ -1,6 +1,7 @@
 package com.smart.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.Authentication;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -89,10 +90,11 @@ public class HomeController {
 	}
 	
 	@GetMapping("/signin")
-	public String login(Model model)
+	public String login(Model model,Authentication authentication)
 	{
+		if (authentication != null && authentication.isAuthenticated()) 
+	        return "redirect:/user/index";
 		return "login";
+	
 	}
-	
-	
 }
