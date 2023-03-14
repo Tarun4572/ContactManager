@@ -15,7 +15,7 @@
  - Each User contains his own contacts implemented using one to many ORM mapping.
  - User cannot access other user contacts.
 
- ### project components explained
+ ### Project components explained
  - CustomUserDetailsService -> to get user by name(email).
  - Myconfig -> Configuration for security which contains authentication provider, password encoder, security rules.
  - Home controller -> contains handlers for home page, user signup and login.
