@@ -29,6 +29,7 @@
    - Thymeleaf is template engine
    - In this project Thymeleaf is used especially th:replace, th:fragment
    - one base html file is used to provide navbar and default structure , other html pages use base.html to get embedded into page using th:replace
+   - base html file contains links to boostrap, jquery and icon CDNs. so that when other html pages gets embedded these links get applied.
    - other thymeleaf syntax like th:text, th:if, th:foreach are used to different operations.
    
  
