@@ -1,0 +1,52 @@
+console.log("This is script file")
+
+const toggleSideBar = ()=>{
+	
+	if($('.sidebar').is(":visible"))
+	{
+		$('.sidebar').css("display","none");
+		$('.content').css("margin-left","0%");
+	}
+	else
+	{
+		$('.sidebar').css("display","block");
+		$('.content').css("margin-left","20%");
+	}
+};
+
+
+const search=()=>{
+	
+	let query=$("#searchInput").val();
+	console.log(query);
+	
+	if(query == '')
+	{
+		$(".searchResult").hide();
+	}
+	else{
+		
+		let url = `http://localhost:8282/search/${query}`;
+		
+		fetch(url)
+		.then((response)=>{
+			return response.json();
+		})
+		.then((data)=>{
+			
+			let text = `<div class='list-group'>`;
+			
+			data.forEach((contact)=>{
+				text+=`<a href='/user/${contact.cId}/contact' class='list-group-item list-group-item-action'> ${contact.name} </a>`;
+			});
+				
+			
+			text+=`</div>`;
+			
+			
+			$(".searchResult").html(text);
+			$(".searchResult").show();
+		})
+		
+	}
+}
