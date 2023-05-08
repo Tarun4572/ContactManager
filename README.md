@@ -14,6 +14,7 @@
  - User details and contacts are stored in MySQL database using hiberate ORM.
  - Each User contains his own contacts implemented using one to many ORM mapping.
  - User cannot access other user contacts.
+ - Implemented Pagination for displaying contacts using JpaRepository.
 
  ### Project components explained
  - CustomUserDetailsService -> to get user by name(email).
