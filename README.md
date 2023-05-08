@@ -32,6 +32,12 @@
    - base html file contains links to boostrap, jquery and icon CDNs. so that when other html pages gets embedded these links get applied.
    - other thymeleaf syntax like th:text, th:if, th:foreach are used to different operations.
    
- 
- 
+![s1](https://user-images.githubusercontent.com/81795770/236774403-989e59d2-8838-458b-bd39-372784edfc83.png)
+![s2](https://user-images.githubusercontent.com/81795770/236774433-37191b71-b941-4864-86d0-5f775fe70900.png)
+![s3](https://user-images.githubusercontent.com/81795770/236774452-74be15b7-7c49-430a-904b-beec31bc2def.png)
+![s4](https://user-images.githubusercontent.com/81795770/236774362-8653287c-420c-4d82-aac7-fffe662f2d2a.png)
+![s5](https://user-images.githubusercontent.com/81795770/236774481-e9409b15-e120-4ca7-8856-f56c21d5120b.png)
+
+
+
 
